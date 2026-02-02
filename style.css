@@ -1,0 +1,799 @@
+/* 基本設定 */
+
+
+/* 時間帯ごとの背景パターン */
+.sky-morning { background: linear-gradient(to bottom, #ff9a9e 0px, #ffffff 500px); } /* 朝焼けのピンク */
+.sky-day     { background: linear-gradient(to bottom, #4facfe 0px, #ffffff 500px); } /* 突き抜ける青空 */
+.sky-evening { background: linear-gradient(to bottom, #f093fb 0px, #ffffff 500px); } /* 紫がかった夕暮れ */
+.sky-night   { background: linear-gradient(to bottom, #a18de7 0px, #ffffff 500px); } /* 深夜の深い青 */
+
+
+/* 背景を画面全体に広げ、スクロールしても背景のグラデーションがズレないように固定します */
+body {
+    transition: background 2s ease;
+    margin: 0;
+    padding:0;
+    min-height: 100vh;
+    background-attachment: fixed; /* 背景を固定 */
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #333;
+    back-ground:
+
+}
+
+/* linear-gradient(方向, 開始色 0px, 終了色 500px) 
+   500px（約15cm）のところで白（#ffffff）に変わる設定です 
+*/
+
+/* 朝：ピンクから白へ */
+.sky-morning { 
+    background: linear-gradient(to bottom, #ffafbd 0px, #ffffff 500px); 
+} 
+
+/* 昼：青空から白へ */
+.sky-day { 
+    background: linear-gradient(to bottom, #2193b0 0px, #ffffff 500px); 
+} 
+
+/* 夕方：オレンジから白へ */
+.sky-evening { 
+    background: linear-gradient(to bottom, #e65c00 0px, #ffffff 500px); 
+} 
+
+/* 夜：濃い紺から白へ */
+.sky-night { 
+    background: linear-gradient(to bottom, #a18de7 0px, #ffffff 500px); 
+}
+
+
+/* ★ここが重要！スムーズスクロールの設定★ */
+html {
+    scroll-behavior: smooth;
+    background:RGB(255, 251, 243);
+}
+
+
+/* コンテンツ幅の制限と中央寄せ */
+.container {
+    max-width: 1000vh;
+    margin-left: 24px;
+    padding: 0px;
+}
+
+/* リンクの基本スタイル（下線を消す） */
+a {
+    text-decoration: none;
+}
+
+/* --- ヘッダー --- */
+header {
+    padding: 5px 0;
+    position: relative;
+    z-index: 10000;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #008ba8; /* 画像の青緑色 */
+    /* font-family: initial; */
+}
+
+.scu-logo{
+    width: 10vh;
+    margin-left: 50px;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-center img{
+  width: 80px;
+}
+
+.header-title {
+  font-size: 2rem;
+  color: #008b8b;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;   /* ← 横 → 縦 */
+  align-items: flex-end;    /* 右寄せ */
+  gap: 12px;                /* メニューとドットの間 */
+}
+
+.menuunder-dot{
+  width: 180px;
+  height: auto;
+}
+
+
+
+
+/* ナビゲーションメニュー */
+/* .top-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+} */
+
+/* ★ご要望の赤文字リンク★ */
+/* .top-nav a {
+    color: #333; 
+    font-weight: bold;
+    font-size: 0.9rem;
+} */
+
+/* --- メインビジュアル --- */
+/* .hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}*/
+
+.top-nav img{
+    width: 50px;
+    position: relative;
+}
+
+/* ハンバーガーメニュー用 */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: none;           /* ← 最初は隠す */
+  flex-direction: column;
+  gap: 12px;
+
+  position: absolute;
+  top: 60px;               /* headerの下 */
+  right: 20px;
+
+  background: white;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* 開いたとき */
+.nav-list.open {
+  display: flex;
+}
+.menu-btn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  z-index: 10001;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.namimoji{
+    margin-top:100px;
+    width:530px;
+}
+
+.img{
+    display: block;
+}
+
+.dot{
+    width: 400px;
+}
+
+.hero-info {
+    color: #008ba8;
+}
+
+.InformationData{
+    width: 1200px;
+}
+
+.date {
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+
+.date .day, .date .range {
+    font-size: 1.5rem;
+}
+
+/* 2/15の文字.event-info{
+    top: 500px;
+} */
+
+.admission {
+    background-color: #f5a623; /* オレンジ色 */
+    color: #fff;
+    display: inline-block;
+    padding: 2px 10px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+/* --- セクション共通 --- */
+.section {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #008ba8;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    /* border-bottom: 1px solid #eee;  */
+    padding-bottom: 10px;
+    
+}
+
+.section-Englishtitle {
+    margin-left: 50px;
+    font-size: 1.0rem;
+    color: #008ba8;
+    margin-bottom: -30px;
+    padding-top: 20px;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+
+  transform: translateY(-50%);
+
+  width: 15vh;          /* 花のサイズ */
+  height: 15vh;
+  background-image: url("images/oneflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+.content-body {
+    font-size: 0.95rem;
+}
+
+/* --- 開催概要リスト --- */
+/* .info-list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+}
+
+.info-list dt {
+    color: #008ba8;
+    font-weight: bold;
+}
+
+.overview-wrap {
+  margin-top: 40px;
+} */
+
+/* 上のテキスト */
+.overview-time {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.overview-info{
+margin:30px;
+}
+
+.free {
+  background: #f5b300;
+  color: white;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+
+.time {
+  font-size: 1.6rem;
+  color: #007c91;
+}
+
+.place {
+  color: #007c91;
+  margin-bottom: 16px;
+}
+
+.schedule-note {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-note li {
+  color: #007c91;
+  margin-bottom: 6px;
+}
+
+/* 日付の丸 */
+.date-list {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+  margin-left: 50px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.date {
+  width: 15vh;
+  height: 15vh;
+  border: 2px solid #007c91;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #007c91;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.date.active,
+.date.special {
+  background: #007c91;
+  color: white;
+}
+
+.date span {
+  font-size: 0.6rem;
+  display: block;
+  margin-top: 4px;
+}
+
+.flower-illust{
+    display: block;
+  margin-left: auto;
+  width: 50vh;
+}
+
+
+.news-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items:end;
+    gap: 15px;
+}
+
+.news-category {
+    border: 1px solid #008ba8;
+    color: #008ba8;
+    padding: 2px 10px;
+    font-size: 0.8rem;
+}
+
+/* --- アクセス --- */
+.access-body {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.access-map img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- フッター --- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+
+
+
+/* タイトルや大きな数字に Montserrat を適用 */
+h1 {
+    font-size: 1.5rem;
+    font-weight: 300; /* 太字 */
+    letter-spacing: 0.05em; /* 文字の間隔を少し広げてオシャレに */
+}
+
+h2, .date, .section-title {
+    font-weight: 700; /* 太字 */
+    letter-spacing: 0.05em; /* 文字の間隔を少し広げてオシャレに */
+}
+
+.main-title{
+    font-size: 40px;
+    margin-left:50px;
+    font-weight:300px;
+}
+
+/* 素案の「01 ごあいさつ」のような数字部分を強調 */
+.section-title::before {
+    /* もしHTMLで数字を分けて書くのが面倒なら、ここでフォントを調整するだけでもOK */
+    font-family: "Montserrat", sans-serif;
+}
+
+/* style.css */
+
+/* 親要素：ここを基準（基点）にする
+.hero-inner {
+    position: relative; 
+    overflow: visible; ドットがはみ出しても隠さない設定 
+} */
+
+/*.dot-top-right {
+    width: 60%; /* 画面の横幅の40%の大きさに広がる */
+    /*max-width: 1500px; /* 大きくなりすぎないように制限をかけることもできます */
+/*}
+
+/* 全ての装飾ドットに共通の設定 */
+.deco-dot {
+    position: absolute; /* 絶対配置にする */
+    z-index: -1;        /* 文字の後ろに隠れるようにする（お好みで） */
+    width: 400px;       /* ドット画像の表示サイズ（適宜調整） */
+}
+
+/* 右上のドットの位置調整 */
+.dot-top-right {
+    top: -50px;     /* 上からの距離 */
+    right: -30px;     /* 右からの距離 */
+}
+
+/* 左真ん中のドットの位置調整_dot_underの方 */
+.dot-mid-left {
+    top: 500px;     /* 上からの距離 */
+    left: -30px;    /* 左からの距離（マイナスにすると画面端からはみ出せます） */
+}
+
+/* 親要素：中身を横並びにする メイン画像の反映：下４つ*/
+.hero-inner {
+    position: relative;
+    overflow: visible;
+
+    display: flex;
+    justify-content: space-between; /* 左右に振り分ける */
+    align-items: center;            /* 上下の中心を揃える */
+    min-height: 600px; /* ← これを追加 */
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* 文字グループの幅を調整 */
+.hero-text-content {
+    flex: 1;             /* 利用可能なスペースを広げる */
+    max-width: 500px;
+    z-index: 2;          /* 画像より手前に出す */
+}
+
+/* 画像グループの調整 */
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* 右端に寄せる */
+}
+
+/* メイン画像のサイズ調整 */
+.main-illust {
+    width: 70vw;         /* 親要素より少し大きくして迫力を出す */
+    max-width: 600px;    /* 最大サイズを指定 */
+    height: auto;
+    position: absolute;   /* ← 流れから外す */
+  top: 0;               /* 画面（または親）の上 */
+  right: 0;  
+    margin-right:-100px;
+
+   
+}
+
+.boygirl-illust{
+    width: 40%;
+    height: auto;
+   
+}
+
+.graduatework{
+  display: flex;
+  align-items: center; /* 縦位置をそろえる */
+  gap: 8px;  
+}
+
+.theme{
+    width: 100vw; 
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+section
+/* body {
+    /* サイト全体のフォントを変える場合 */
+    /* font-family: "Palette+Mosaic 1c", sans-serif; 
+}
+ */ 
+
+
+h1 {
+    /* 特定のタイトルだけ別のフォント（例：インパクトのあるフォント）にしたい場合 */
+    font-family: "Impact", sans-serif;
+}
+
+
+
+
+/* 学生作品ページ*/
+/*ギャラリー全体を Grid に */
+.gallery {
+  display: grid;
+  
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 24px;
+  padding: 20px 0;
+}
+
+
+/* カード */
+.card {
+  cursor: pointer;
+  transition: transform 1.0s ease;/* ここでクリック後の画面表示を変えられる_easeとか */
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px; /* カードのサイズ */
+}
+
+/* 右下に置く文字＿モーダル後 */
+.card-label { 
+    position: absolute;
+    bottom: -20px; /* 枠の外に出す */
+    right: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 16px; /* ← 角丸 */
+  display: block;
+}
+
+/* カードの外側に出すテキスト */
+.card-info {
+  margin-top: 1px;
+  display: flex;
+  justify-content: space-between; /* 左と右に分ける */
+  align-items: center; /* ← 高さを揃えるポイント */
+  color: rgb(0,112,144);
+}
+
+.card-name {
+  font-weight: normal;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.card-right{
+    display: flex;
+    gap: 5px;
+}
+
+.card-type{
+    display: inline-block;
+    padding: 0px 8px;
+    border: 1px solid #008ba8;
+    border-radius: 7px;
+    font-size: 0.5rem;
+    margin: auto;/* 消すかどうか要検討 */
+}
+
+.card-lab {
+    display: inline-block;
+    padding: 0px 8px;
+    border: 1px solid #008ba8;
+    border-radius: 5px;
+    font-size: 0.5rem;
+    margin: auto;
+}
+
+
+.info {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.lab {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* モーダル */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(231, 228, 228, 0.7);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.4s ease;
+  
+}
+
+
+/* モーダル先のカード構造 */
+.modal-content{
+    border-radius: 20px;
+    position: relative;
+    max-width: 900px;
+    max-height: 900px;
+    width: 85%;
+    overflow: hidden;
+    
+  grid-template-rows: auto auto;
+} 
+
+/* モーダル先のカード構造/背景に角丸box入れたい場合 */
+/* .modal-content{
+    background: rgb(160, 215, 240) ;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center; 
+    animation: zoomIn 0.4s ease;
+    position: relative;
+}  */
+
+/* モーダル後の画像設定 */
+.modal-content img{
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    animation: zoomIn 0.4s ease;
+}
+/* 角丸背景用 */
+
+
+
+/* モーダル内のテキスト全体 */
+.modal-text {
+  /* position: absolute; */
+  bottom: 20px;
+  right: 20px;
+  color: #007c91;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 80px
+}
+
+.modal-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.modal-name {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+.modal-info {
+  display: flex;
+  justify-content: flex-end; /* 右寄せ */
+  gap: 6px;
+}
+
+.modal-type,
+.modal-lab {
+  border: 1px solid #007c91;
+  border-radius: 999px; /* ← 完全に丸く */
+  padding: 2px 8px;
+  font-size: 0.65rem;
+  line-height: 1;
+}
+
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: black;
+  cursor: pointer;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+footer img{
+    display: block;
+    width: 950px;
+    height: auto;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); }
+  to { transform: scale(1); }
+}
+
+/* どう森的なアニメーションこれが一番したにする */
+#circle-transition {
+  position: fixed;
+  inset: 0;
+  background: rgb(245, 177, 0);
+  clip-path: circle(0% at center); /* 画面全体を覆う大きな円 */
+
+  transition: 
+    clip-path 0.7s cubic-bezier(.4,0,.2,1),
+    background-color 0.25s ease;
+
+  will-change: clip-path; /* ← これが超重要 */
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* 円が閉じる状態 */
+#circle-transition.circle-close {
+  clip-path: circle(200% at center);
+   transition-timing-function: cubic-bezier(.10,.8,.2,1);
+}
+
+/* 広がるとき（黄色） */
+#circle-transition.circle-expand {
+ background-color: rgb(245, 177, 0);
+ transition: background-color 0.4s ease-out, clip-path 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+/* 縮むとき（青） */
+#circle-transition.circle-shrink {
+  background-color: rgb(0, 170, 255) ;
+  transition: background-color 0.4s ease-in, clip-path 0.7s cubic-bezier(.4,0,.2,1);
+}
+/* ease-inでスムーズな色遷移 */
+
+

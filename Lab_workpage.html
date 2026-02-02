@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生作品 - 卒業修了研究展2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Lab_workpage.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html" style="color: inherit; text-decoration: none;">
+                    <h1>札幌市立大学<br>デザイン学部・デザイン研究科<br>卒業修了研究展2026</h1>
+                </a>
+            </div>
+            <nav class="top-nav">
+                <!-- ハンバーガー -->
+                <button class="menu-btn" onclick="toggleMenu()">
+                 <img src="images/menu-icon.gif" alt="メニュー">
+                 </button>
+
+                <ul class="nav-list">
+                  <li><a href="index.html#overview">開催概要</a></li>
+                  <li><a href="workpage.html">学生作品</a></li>
+                  <li><a href="index.html#access">会場MAP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">学生作品一覧</h2>
+
+                <div class="content-body">
+                    <p>学生たちの作品をクリックすると拡大表示されます。</p>
+
+                     <!-- ▼▼ ここから主体別/研究室別のボタンー ▼▼ -->
+                        <div class="sort-buttons">
+                            <button onclick="sortByLab()">研究室ごと</button>
+                            <button onclick="sortByType()">主体別</button>
+                        </div>
+
+                        <div class="lab-grid">
+
+                            <a href="workpage.html?data-lab=石井ゼミ" class="lab-window">
+                                <img src="lab_window/window01.png" alt="石井ゼミ">
+                                <p class="lab-name">石井ゼミ</p>
+                            </a>
+
+                            <a href="workpage.html?data-lab=伊藤・桝田ゼミ" class="lab-window" >
+                                <img src="lab_window/window02.png" alt="伊藤・桝田ゼミ">
+                                <p class="lab-name">伊藤・桝田ゼミ</p>
+                            </a>
+
+                            <a href="workpage.html?data-lab=金・柿山ゼミ" class="lab-window">
+                                <img src="lab_window/window03.png" alt="金・柿山ゼミ">
+                                <p class="lab-name">金・柿山ゼミ</p>
+                            </a>
+
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><a href="index.html" style="color: #666;">← トップページに戻る</a></p>
+            <p>&copy; 2026 Sapporo City University</p>
+            <img src="images/footer.png" alt="">
+        </div>
+    </footer>
+
+
+    <script src="workpage_item/script.js"></script>
+
+</body>
+
+</html>        

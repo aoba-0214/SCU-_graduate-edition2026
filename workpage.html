@@ -1,0 +1,1972 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生作品 - 卒業修了研究展2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+
+            <div class="header-left">
+                <img src="images/scu-logo.png" alt="ロゴ" class="scu-logo">
+            </div>
+
+            <div class="header-center">
+                    <h1 class="header-title">卒業研究作品</h1>
+                    <img src="images/boygirl.gif" alt="boygirl">
+            
+            </div>
+        <div class="header-right">
+            <nav class="top-nav">
+                <!-- ハンバーガー -->
+                <button class="menu-btn" onclick="toggleMenu()">
+                 <img src="images/menu-icon.gif" alt="メニュー">
+                 </button>
+
+                <ul class="nav-list">
+                  <li><a href="index.html#overview">開催概要</a></li>
+                  <li><a href="workpage.html">学生作品</a></li>
+                  <li><a href="index.html#access">会場MAP</a></li>
+                </ul>
+            </nav>
+
+            
+            
+        </div>
+    </header>
+
+    <main>
+         <!-- <div class="container hero-inner">
+        <img src="images/dot_image.gif" class="deco-dot dot-top-right" alt=""> -->
+       
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">人間情報デザインコース</h2>
+
+                <div class="content-body">
+                    <p>学生たちの作品をクリックすると拡大表示されます。</p>
+                
+
+                     <!-- ▼▼ ここから主体別/研究室別のボタンー ▼▼ -->
+                        <div class="sort-buttons">
+                            <button onclick="sortByLab()">研究室別</button>
+                            <button onclick="sortByType()">主体別</button>
+                        </div>
+
+                    <p>制作主体</p>
+                    <!-- ▼▼ ここからギャラリー ▼▼ -->
+            
+                    <div class="gallery">
+
+                      <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211022.JPG', '医師と患者のコミュニケーション支援キットの提案','未破裂脳動脈瘤患者の不安低減に向けて','鎌田あおば', '制作','伊藤健世ゼミ')"
+                            data-lab="伊藤・桝田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211022.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">デモ_鎌田 あおば</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">伊藤健世ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+                <!-- ここからほんちゃん -->
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/1811057.JPG', '生成AI用いた箱庭型キャラクターコンテンツの開発',' ','二瓶春奈', '制作','松永康佑ゼミ')"
+                            data-lab="藤木・松永ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/1811057.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">二瓶春奈</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">松永康佑ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2011063.JPG', '台割がパンフレットの内容理解に及ぼす影響について',' ','中野 晴', '制作','金秀敬ゼミ')"
+                            data-lab="金・柿山ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2011063.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">中野 晴</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">金ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2111049.JPG', 'ぬいぐるみと共に暮らすためのデザイン',' ','高橋 七海', '制作','細谷多聞ゼミ')"
+                            data-lab="細谷・吉田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2111049.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">高橋 七海</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">細谷ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211002.JPG', 'アシッドグラフィックスにおける過剰さが強さの評価に与える影響',' ','安達 丈瑠', '制作','金秀敬ゼミ')"
+                            data-lab="金・柿山ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211002.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">安達 丈瑠</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">金ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211003.JPG', '「閉じた世界」の魅力に関する研究',' ','飯沼 鳳也', '制作','細谷多聞ゼミ')"
+                            data-lab="細谷・吉田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211003.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">飯沼 鳳也</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">細谷ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211004.JPG', '錯覚する耳、臨場感を生む音響効果','知覚の揺らぎを生む音響の編集、表現手法の探究','岩井 莉子', '制作','矢久保空遥ゼミ')"
+                            data-lab="三谷・矢久保ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211004.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">岩井 莉子</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">矢久保ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211015.JPG', '探索行為による日本語学習教材の開発',' ','小川 こひな', '制作','藤木淳ゼミ')"
+                            data-lab="藤木ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211015.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">小川 こひな</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">藤木ゼミ</p>
+                                    </div>
+                            </div>
+                        </div>    
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211020.JPG', '手元に施すネイル型非言語コミュニケーションツールの提案',' ','小幡 ヒカル', '制作','細谷多聞ゼミ')"
+                            data-lab="細谷・吉田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211020.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">小幡 ヒカル</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">細谷ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211022.JPG', '医師と患者のコミュニケーション支援キットの提案','未破裂脳動脈瘤患者の不安低減に向けて','鎌田あおば', '制作','伊藤健世ゼミ')"
+                            data-lab="伊藤・桝田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211022.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">鎌田 あおば</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">伊藤ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211030.JPG', '札幌市南区のWebサイトの改善案','チュートリアルを活かしたわかりやすいWebサイト','北森 あん', '制作','大渕一博ゼミ')"
+                            data-lab="大渕ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211030.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">北森 あん</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">大渕ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211036.JPG', '足の置き場から考える椅子のデザイン',' ','倉谷 明日香', '制作','細谷多聞ゼミ')"
+                            data-lab="細谷・吉田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211036.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">倉谷 明日香</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">細谷ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211038.JPG', '肌悩みを物語るキャラクター','肌悩みがデザインされたキャラクターによる物語療法の可能性','小島 涼那', '制作','福田大年ゼミ')"
+                            data-lab="福田・横溝ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211038.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">小島 涼那</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">福田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211036.JPG', '触覚テンポ刺激はアイディア発想を活性化させるのか？','発想支援効果の検証とプロトタイプ開発','櫻口 翼', '制作','桝田聡志ゼミ')"
+                            data-lab="伊藤・桝田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211043.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">櫻口 翼</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">桝田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211049.JPG', '「見えないもの」の表現',' ','鈴木 稜琉', '制作','三谷篤史ゼミ')"
+                            data-lab="三谷・矢久保ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211049.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">鈴木 稜琉</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">三谷ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211053.JPG', '身体の省略表現がもたらすスポーツ観戦体験向上を検証するための立体作品制作','～相撲の取組を例にした制作～','髙橋 七琉', '制作','伊藤健世ゼミ')"
+                            data-lab="伊藤・桝田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211053.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">髙橋 七琉</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">伊藤ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211054.JPG', '現代女性ファッションにおける幼児的要素の再評価','-“子供みたい”が褒め言葉になる時代-','高橋 日向子', '制作','伊藤健世ゼミ')"
+                            data-lab="伊藤・桝田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211054.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">高橋 日向子</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">伊藤ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211056.JPG', 'W(ダブル)',' ','田中 日咲人', '制作','大渕一博ゼミ')"
+                            data-lab="大渕ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211056.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">田中 日咲人</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">大渕ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211069.JPG', 'Unico','異学年間のつながりを促進する学内交流サイトの制作','南部 深央理', '制作','大渕一博ゼミ')"
+                            data-lab="大渕ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211069.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">南部 深央理</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">大渕ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211076.JPG', '旅行体験価値を最大化するマネジメントツールの検証および試作提案',' ','林 裕高', '制作','桝田聡志ゼミ')"
+                            data-lab="伊藤・桝田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211076.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">林 裕高</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">桝田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211077.JPG', '着けたくなる脊柱側弯症の治療装具','医療用装具と服飾文化の融合','平井 遥香', '制作','三谷篤史ゼミ')"
+                            data-lab="三谷・矢久保ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211077.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">平井 遥香</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">三谷ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211087.JPG', '容姿への抵抗感に配慮した表情トレーニング支援システムの提案',' ','三輪 宙輝', '制作','藤木淳ゼミ')"
+                            data-lab="藤木・松永ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211087.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">三輪 宙輝</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">藤木ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211087.JPG', '間身体性を介した自己と他者の相互的循環','〜「手の環世界」を見えるかたちにする実践〜','村上 璃紗', '制作','横溝賢ゼミ')"
+                            data-lab="横溝・福田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211088.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">村上 璃紗</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">横溝ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211094.JPG', '場に存在する記憶のビジュアルリサーチがもたらす 社会的なデザインの可能性',' ','山本 愛心', '制作','横溝賢ゼミ')"
+                            data-lab="横溝・福田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211094.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">山本 愛心</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">横溝ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211095.JPG', '回答時間と確信度との相関に基づくエニアグラムを拡張した自己内省支援システムの開発',' ','吉岡 里紗', '制作','藤木淳ゼミ')"
+                            data-lab="藤木・松永ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211095.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">吉岡 里紗</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">横溝ゼミ</p>
+                                    </div>
+                            </div>
+ 
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2362005.JPG', '民間信仰を分解することから生まれる縁づくりの可能性','―及川家で信仰される三郎稲荷神社での実践を通じてー','伊藤 悠貴', '制作','横溝賢ゼミ')"
+                            data-lab="福田・横溝ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2362005.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">伊藤 悠貴</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">横溝ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2462017.JPG', '個人除雪作業の軽労化を題材とした身体機能の拡張プロトタイピング製作と実証',' ','桝田 聡志', '制作','三谷篤史ゼミ')"
+                            data-lab="三谷・矢久保ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2462017.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">桝田 聡志</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">三谷ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <p>改行</p>
+                <br>
+                <br>
+               
+        <!-- 石井ゼミ＋2人 -->
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211016.JPG', '異なる大学・学部に属する学生同士の交流イベントのデザイン','－「かもトーク」の運営を通して－','奥野 つぐみ', '論文','石井雅博ゼミ')"
+                            data-lab="石井ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211016.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">奥野 つぐみ</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">石井ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211018.JPG', '自己表現に及ぼす差異化・同調の心理的葛藤の影響','ファッション分野からの考察','尾崎 碧', '論文','吉田彩乃ゼミ')"
+                            data-lab="細谷・吉田ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211018.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">尾﨑 碧</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">吉田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211025.JPG', '慣れによる労力認知の変化と、その要因に関する考察',' ','神田 信輝', '論文','矢久保空遥ゼミ')"
+                            data-lab="三谷・矢久保ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211025.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">神田 信輝</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">矢久保ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211026.JPG', '弔いにおける手間の役割とデジタル墓の許容要件','―若年層の墓参意識に着目して―','菅野 絢果', '論文','矢久保空遥ゼミ')"
+                            data-lab="三谷・矢久保ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211026.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">菅野 絢果</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">矢久保ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211027.JPG', '切断完了時のみの触覚体験を再現するVR用ハサミ型デバイスの開発と検証',' ','神部 優希', '論文','松永康佑ゼミ')"
+                            data-lab="藤木・松永ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211027.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">神部 優希</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">松永ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211037.JPG', '話者の沈黙が聴者の印象に与える影響',' ','香西 裕仁', '論文','金秀敬ゼミ')"
+                            data-lab="金・柿山ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211037.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">香西 裕仁</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">金ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211040.JPG', 'デザインにおける逸脱とは何か','逸脱志向とその可能性共有を可能にする往還的なデザイン思考の解明','境 美月', '論文','横溝賢ゼミ')"
+                            data-lab="福田・横溝ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211040.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">境 美月</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">横溝ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211045.JPG', '生成AIの人格設計に関する、日本語・英語間の同一設計による比較からの考察',' ','佐藤 敢為', '論文','吉田彩乃ゼミ')"
+                            data-lab="細谷・吉田ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211045.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">佐藤 敢為</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">吉田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211047.JPG', 'VRを活用したセルフマッサージによる心理的満足度に関する研究',' ','下橋 茉衣', '論文','松永康佑ゼミ')"
+                            data-lab="藤木・松永ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211047.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">下橋 茉衣</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">松永ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211052.JPG', 'デザインする思考の図解を通して「自分ということ」を理解する表現技法の構築',' ','高瀬 愛菜', '論文','横溝賢ゼミ')"
+                            data-lab="福田・横溝ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211052.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">高瀬 愛菜</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">横溝ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211057.JPG', 'SF映画における製品プロダクトの分析を通じた未来因子の抽出と未来感に関する研究','未来感の再現性を高めるためのガイドラインの構築とその開発プロセスの検討','谷口 暉麟', '論文','柿山浩一郎ゼミ')"
+                            data-lab="金・柿山ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211057.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">谷口 暉麟</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">柿山ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211061.JPG', '好感をもたらす構図と色温度による相互作用可能性の検証',' ','土屋 旬平', '論文','矢久保空遥ゼミ')"
+                            data-lab="三谷・矢久保ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211061.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">土屋 旬平</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">矢久保ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211062.JPG', 'CMにおける視聴者に共感を与える映像要素と購買意欲への影響','','恒光 美桜', '論文','柿山浩一郎ゼミ')"
+                            data-lab="金・柿山ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211062.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">恒光 美桜</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">柿山ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211072.JPG', '香水瓶のデザインと連想される香りの関係',' ','西嶋 麗奈', '論文','吉田彩乃ゼミ')"
+                            data-lab="細谷・吉田ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211072.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">西嶋 麗奈</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">吉田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+        
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211075.JPG', '手づくり菓子を介した友だちコミュニケーション','つくる想いが変化させる心理的距離','濱西 七海', '論文','福田大年ゼミ')"
+                            data-lab="福田・横溝ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211075.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">濱西 七海</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">福田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211082.JPG', 'イラストレーションの線表現における残印象性・誘目性の変化',' ','前田 璃乃', '論文','柿山浩一郎ゼミ')"
+                            data-lab="金・柿山ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211082.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">前田 璃乃</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">柿山ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211083.JPG', '顔の対称性が感情反応に及ぼす影響分析',' ','松浦さやか', '論文','石井雅博ゼミ')"
+                            data-lab="石井ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211083.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">松浦 さやか</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">石井ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211086.JPG', '記述力の発達比較に基づく教育指針の提案',' ','三原 真凜', '論文','金秀敬ゼミ')"
+                            data-lab="金・柿山ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211086.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">三原 真凜</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">金ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211093.JPG', 'VRを用いることによる懐かしさの喚起に及ぼす影響に関する検討',' ','山端 瑠花', '論文','藤木淳ゼミ')"
+                            data-lab="藤木・松永ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211093.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">山端 瑠花</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">藤木ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2462012.JPG', '「自分ということ」の語りをひき出す記録技法キャラティブの実践','-容姿を描かないキャラづくりがもたらす個別具体的物語の可能性-','佐藤 優記代', '論文','横溝賢ゼミ')"
+                            data-lab="福田・横溝ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2462012.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">佐藤 優記代</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">横溝ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                         
+                        
+ <!-- 必要に応じてカードを追加 -->
+                    </div>
+                    <!-- ▲▲ ギャラリーここまで ▲▲ -->
+
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 class="section-title">人間空間デザインコース</h2>
+
+                <div class="content-body">
+                    <p>学生たちの作品をクリックすると拡大表示されます。</p>
+                
+
+                     <!-- ▼▼ ここから主体別/研究室別のボタンー ▼▼ -->
+                        <div class="sort-buttons">
+                            <button onclick="sortByLab()">研究室別</button>
+                            <button onclick="sortByType()">主体別</button>
+                        </div>
+
+                    <p>制作主体</p>
+                    <!-- ▼▼ ここからギャラリー ▼▼ -->
+            
+                    <div class="gallery">
+
+                      <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2111035.JPG', '妖怪画の美学に基づく恐怖表現','3DCGによる妖怪表現への展開','佐藤 ありさ', '制作','須之内元洋ゼミ')"
+                            data-lab="須之内ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2111035.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">佐藤 ありさ</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">須之内ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+                
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2111050.JPG', '沈黙の停留群',' ','高山 兼伸', '制作','金子晋也ゼミ')"
+                            data-lab="金子ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2111050.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">高山 兼伸</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">金子ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2111069.JPG', '滞在するランドリー','緩やかなつながりを生みだす空間提案','新山 陽南', '制作','藤沢礼央ゼミ')"
+                            data-lab="藤沢ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2111069.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">新山 陽南</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">藤沢ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211005.JPG', '２つのパブリックアートがもたらす各作用','スカイウェイの通行体験から見る表現の比較','市橋 佳子', '制作','ゼミ')"
+                            data-lab="三谷・矢久保ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211005.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">市橋 佳子</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211008.JPG', '時を紡ぐ駅','-小樽駅再編計画-','内田 達也', '制作','遠藤謙一良ゼミ')"
+                            data-lab="遠藤ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211008.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">内田 達也</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">遠藤ゼミ</p>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211012.JPG', 'City voidの開放',' ','大友 このみ', '制作','藤沢礼央ゼミ')"
+                            data-lab="藤沢ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211012.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">大友 このみ</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">藤沢ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211013.JPG', '家庭内での交換日記を通じたコミュニケーションの可能性','未破裂脳動脈瘤患者の不安低減に向けて','大野 結生', '制作','石田勝也ゼミ')"
+                            data-lab="石田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211013.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">大野 結生</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">石田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211014.JPG', '表現空間としてのネイルにみる装飾表現の研究',' ','岡本 明佳', '制作','片山めぐみゼミ')"
+                            data-lab="片山ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211014.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">岡本 明佳</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">片山ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211019.JPG', '『感謝』',' ','尾崎 匠', '制作','小宮加容子ゼミ')"
+                            data-lab="小宮ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211019.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">尾崎 匠</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">小宮ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211024.JPG', 'SNSの他者比較文化が生む自己否定的な心と向き合う近未来漫画の制作',' ','河合 佑香', '制作','須之内元洋ゼミ')"
+                            data-lab="須之内ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211024.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">河合 佑香</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">須之内ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211033.JPG', '合唱演奏者の個別の非言語的歌唱表現に見る集団で歌う行為の面白さ',' ','工藤 綾乃', '制作','須之内元洋ゼミ')"
+                            data-lab="須之内ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211033.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">工藤 綾乃</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">須之内ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211035.JPG', '香りを贈る','-香水ワークショップ「Hana:2」を通して“香りを贈る体験”をデザインする-','久米 華鈴', '制作','石田勝也ゼミ')"
+                            data-lab="石田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211035.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">久米 華鈴</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">石田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211039.JPG', '森に灯る、内なる感性',' ','小林 蓮奈', '制作','遠藤謙一良ゼミ')"
+                            data-lab="遠藤ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211039.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">小林 蓮奈</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">遠藤ゼミ</p>
+                                    </div>
+                            </div>
+                        </div> 
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211041.JPG', '焼成札幌軟石が奏でる音の響き',' ','坂田 月葵子', '制作','西川忠ゼミ')"
+                            data-lab="西川ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211041.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">坂田 月葵子</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">西川ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211046.JPG', '水和の家','−水と地の縁の暮らす−','佐藤 楓佳', '制作','ゼミ')"
+                            data-lab="ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211046.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">佐藤 楓佳</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211048.JPG', '感情表現支援を目的とした子ども向けストラップ型ツールの開発と検証',' ','杉山 かなえ', '制作','片山めぐみゼミ')"
+                            data-lab="片山ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211048.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">杉山 かなえ</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">片山ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211051.JPG', 'ハンドメイドイベント出店における初心者支援ブースデザイン',' ','高井 満月里', '制作','須之内元洋ゼミ')"
+                            data-lab="須之内ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211051.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">高井 満月里</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">須之内ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211058.JPG', '静けさの縁を辿る','-美深町の風景を通じた環境芸術-','俵 実羽那', '制作','金子晋也ゼミ')"
+                            data-lab="金子ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211058.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">俵 実羽那</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">金子ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211064.JPG', '里山に着目した動的平衡状態の建築の提案','〜北海道の二次林を事例として〜','冨波 大志', '制作','吉田修ゼミ')"
+                            data-lab="吉田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211064.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">冨波 大志</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">吉田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                         <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211066.JPG', '映画制作活動を通した存在の再構築','-他者を演じ、自己を観ることで導く自己理解の探究-','土井 香寧', '制作','石田勝也ゼミ')"
+                            data-lab="石田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211066.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">土井 香寧</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">石田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211067.JPG', '大雪山を水源とする地下水と人々のくらし','ー東川町における地下水と市民生活の関係を解説する展示デザインー','中谷 花野', '制作','片山めぐみゼミ')"
+                            data-lab="片山ゼミ"
+                            data-type="制作"> 
+
+                            <img src="workpage_item/thumbnail/2211067.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">中谷 花野</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">片山ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div> -->
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211070.JPG', 'あわいに住まう者の傷によりかかる猫とその日々',' ','西井 二胡', '制作','山田信博ゼミ')"
+                            data-lab="山田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211070.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">西井 二胡</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">山田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211071.JPG', '道産未利用材を活用した病院施設の内装木質化の提案',' ','西川 虎太郎', '制作','古俣寛隆ゼミ')"
+                            data-lab="古俣ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211071.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">西川 虎太郎</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">古俣ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211078.JPG', '田語（でんご）の杜',' ','平賀 悠莉', '制作','片山めぐみゼミ')"
+                            data-lab="片山ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211078.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">平賀 悠莉</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">片山ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211085.JPG', '「食べたい」を引き出すための仕掛けづくり',' −食に対して興味を持たせるカードゲームの提案−','丸山 瑞季', '制作','小宮加容子ゼミ')"
+                            data-lab="小宮ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211085.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">丸山 瑞季</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">小宮ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211089.JPG', '「隙」と「縁(ふち)」にみる関係構築の契機と展開','-古民家リノベーションを通じた場づくりの実践から-','守屋 岳杜', '制作','藤沢礼央ゼミ')"
+                            data-lab="藤沢ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211089.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">守屋 岳杜</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">藤沢ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211092.JPG', '卒業研究における失敗と学び',' ','山北 青依', '制作','石田勝也ゼミ')"
+                            data-lab="石田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211092.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">山北 青依</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">石田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2462010.JPG', '3～12歳頃に一人で短時間居た気持ちが落ち着く小スペース','-アンケート調査と児童館への活用提案-','佐々木 優花', '制作','山田信博ゼミ')"
+                            data-lab="山田ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2462010.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">佐々木 優花</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">山田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2462019.JPG', '「雪を払い、雪を纏う」 ','- 雪の様々なデータ•実雪を用いた新たな空間演出デザインの提案 -','森田 唯斗', '制作','古俣寛隆ゼミ')"
+                            data-lab="古俣ゼミ"
+                            data-type="制作"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2462019.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">森田 唯斗</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">制作</p>
+                                      <p class="card-lab">古俣ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                    <p>改行</p>
+                    <br>
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211001.JPG', '千歳市青葉公園の成立と神社山の変遷に関する社会文化的視点からの史的考察',' ','相澤 穂乃香', '論文','大島卓ゼミ')"
+                            data-lab="大島ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211001.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">相澤 穂乃香</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">大島ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211007.JPG', '鉄骨フレームと木質要素の複合構造の研究開発','― 木質耐力壁と木質ダンパーを用いた構造の耐震性能評価 ―','岩崎 力弥', '論文','西川忠ゼミ')"
+                            data-lab="西川ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211007.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">岩崎 力弥</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">西川ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211009.JPG', '居住空間の壁面を占めるモノの割合と分布に関する研究',' ','宇夫方 爽帆', '論文','山田信博ゼミ')"
+                            data-lab="山田ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211009.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">宇夫方 爽帆</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">山田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211010.JPG', '都市の高齢者福祉施設における植物活動の実践と課題',' ','太田 咲月', '論文','御手洗洋蔵ゼミ')"
+                            data-lab="御手洗ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211010.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">太田 咲月</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">御手洗ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/22110021.JPG', '都市化社会におけるスズメと人間の共生についての研究',' ','加藤 リサ', '論文','大島卓ゼミ')"
+                            data-lab="大島ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211021.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">加藤 リサ</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">大島ゼミ</p>
+                                    </div>
+                            </div>
+                         </div>
+
+                            <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211029.JPG', '参加型デザインと住民主体活動の関連性及び実態分析','-中頓別町第8期総合計画「7つのアクション」を事例として-','北村 小麦', '論文','小林重人ゼミ')"
+                            data-lab="小林ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211029.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">北村 小麦</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">小林ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211031.JPG', 'ワオキツネザルの光・熱環境への応答行動と来園者への展示デザイン','ー札幌市円山動物園を事例としてー','木村 隆太', '論文','齊藤雅也ゼミ')"
+                            data-lab="齊藤ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211031.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">木村 隆太</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">齊藤ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                            <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211042.JPG', '倶知安町の地域特性を踏まえた六次産業化の推進',' ','坂本 春華', '論文','御手洗洋蔵ゼミ')"
+                            data-lab="御手洗ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211042.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">坂本 春華</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">御手洗ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211044.JPG', '食事量の個人差理解を促す栄養教材のデザイン','-給食に対する不安解消を目指した食育へのアプローチ-','佐々木 琉里', '論文','小林重人ゼミ')"
+                            data-lab="小林ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211044.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">佐々木 琉里</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">小林ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211055.JPG', '小規模事業者が',' ','髙橋 佑心', '論文','古俣寛隆ゼミ')"
+                            data-lab="古俣ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211055.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">髙橋 佑心</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">古俣ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211059.JPG', 'まちの擬人化が若年層の都市認知と愛着形成に及ぼす影響','-宮城県名取市11地区を対象としたキャラクター制作ワークショップを通して-','千葉 葵', '論文','小林重人ゼミ')"
+                            data-lab="小林ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211059.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">千葉 葵</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">小林ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211060.JPG', '園芸ボランティア活動をつなぐネットワークにおける現状と課題に関する研究',' ','千葉 一輝', '論文','椎野亜紀夫ゼミ')"
+                            data-lab="椎野ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211060.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">千葉 一輝</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">椎野ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                    
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211065.JPG', '植物との共生デザイン',' ','土井 香鈴', '論文','大島卓ゼミ')"
+                            data-lab="大島ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211065.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">土井 香鈴</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">大島ゼミ</p>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211068.JPG', 'さっぽろの歴史文化観光のあり方に関する考察',' ','中野 侑奈', '論文','森朋子ゼミ')"
+                            data-lab="森ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211068.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">中野 侑奈</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">森ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211081.JPG', '狭小住宅における可変空間の心理的影響',' ','本間 悠希', '論文','山田信博ゼミ')"
+                            data-lab="山田ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211081.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">本間 悠希</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">山田ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211084.JPG', '受け手の視点から見た信頼を築く指導に関する研究',' ','松山 夏佳', '論文','小宮加容子ゼミ')"
+                            data-lab="小宮ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211084.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">松山 夏佳</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">小宮ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211090.JPG', '復興委員会の活動に着目した災害復興の過程と災害伝承の関係について','- 2018年北海道胆振東部地震の札幌市里塚地区と北広島市大曲並木地区を比較して-','森若 実菜美', '論文','森朋子ゼミ')"
+                            data-lab="森ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211090.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">森若 実菜美</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">森ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211091.JPG', '「人々の営み」から再考する地域新聞の価値','ー北海道・津別町の2紙を用いた語りを引き出す展示実践 ー','八鍬 優音', '論文','小林重人ゼミ')"
+                            data-lab="小林ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211091.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">八鍬 優音</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">小林ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2211096.JPG', 'テーマ演出型販売が購買意欲に及ぼす影響','-演出と商品への関心の両立をめざす販売の検討-','松山 夏佳', '論文','小宮加容子ゼミ')"
+                            data-lab="小宮ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2211096.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">吉野 楓菜</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">小宮ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+
+                         <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2362012.JPG', '寒冷地の公営住宅に行ける夏季の熱中症危険度に関する調査研究','ー札幌市もみじ台団地を対象にしてー','中野 芳則', '論文','西川忠ゼミ')"
+                            data-lab="西川ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2362012.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">中野 芳則</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">西川ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                         <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2462003.JPG', '北海道の道の駅における車中避難者受け入れに関する提言',' ','小山内 莉々加', '論文','小林重人ゼミ')"
+                            data-lab="小林ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2462003.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">小山内 莉々加</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">小林ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                         <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2462004.JPG', '子どもの発達を支援する商い体験プログラムのデザイン','－フリースクールと連携した「みっけば」の実践－','加藤 ふらの', '論文','片山めぐみゼミ')"
+                            data-lab="片山ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2462004.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">加藤 ふらの</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">片山ゼミ</p>
+                                    </div>
+                            </div>
+
+                          </div>
+
+                         <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2462005.JPG', '中学校における『学び合い』の生徒間ケアリングの実態に関する質的研究','―相互的な安心感を醸成するコミュニティデザインの観点から―','上平 真央', '論文','片山めぐみゼミ')"
+                            data-lab="片山ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2462005.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">上平 真央</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">片山ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2462006.JPG', 'パパゲーノ当事者による死生観のオートエスノグラフィー','-“死考”をテーマとした創作活動を通じて-','来田 玲子', '論文','大島卓ゼミ')"
+                            data-lab="大島ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2462006.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">来田 玲子</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">大島ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card"
+                            onclick="circleCloseAndOpenModal('workpage_item/thumbnail/2462011.JPG', '耐震化途上国の既存建築物の耐震性評価における SV(ストリートビュー)活用の適用性に関する研究','-SVを用いた事前調査による地震被害の防止を目的として―','佐竹 直', '論文','西川忠ゼミ')"
+                            data-lab="西川ゼミ"
+                            data-type="論文"> <!-- ここは合同ゼミ名 -->
+
+                            <img src="workpage_item/thumbnail/2462011.JPG" alt="作品画像">
+
+                            <div class="card-info">
+                                <p class="card-name">佐竹 直</p>
+
+                                   <div class="card-right">
+                                      <p class="card-type">論文</p>
+                                      <p class="card-lab">西川ゼミ</p>
+                                    </div>
+                            </div>
+
+                        </div>
+                        
+
+                                   
+                        
+ <!-- 必要に応じてカードを追加 -->
+                    </div>
+                    <!-- ▲▲ ギャラリーここまで ▲▲ -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ▼▼ モーダル ▼▼ -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">
+                ×
+            </span>
+                
+            <img id="modal-img" src="">
+
+            <div class="modal-text">
+                <p class="modal-title"></p>
+                <p class="modal-subtitle"></p>
+                <p class="modal-name"></p>
+                <div class="modal-info">
+                    <span class="modal-type"></span>
+                    <span class="modal-lab"></span>
+                </div>
+            </div>
+        </div>
+</div>
+    
+<!-- モーダル先のカード構造　div/modalの中にdiv/modal-contentを入れることで角丸の中に作品が映るようになる！  -->
+
+
+    <!-- ▲▲ モーダル ▲▲ -->
+
+    <footer>
+        <div class="container">
+            <p><a href="index.html" style="color: #666;">← トップページに戻る</a></p>
+            <p>&copy; 2026 Sapporo City University</p>
+            <img src="images/footer.png" alt="">
+        </div>
+    </footer>
+
+    
+
+
+   <div id="circle-transition"></div>
+
+
+
+    <script src="workpage_item/script.js"></script>
+
+
+</body>
+</html>

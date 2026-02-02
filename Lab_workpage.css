@@ -1,0 +1,21 @@
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.lab-window {
+  text-align: center;
+  color: #008ba8;
+}
+
+.lab-window img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.lab-name {
+    font-family: "BuildingsRailway", sans-serif;
+    font-weight: 700; /* 太字 */
+    letter-spacing: 0.05em; /* 文字の間隔を少し広げてオシャレに */
+}
