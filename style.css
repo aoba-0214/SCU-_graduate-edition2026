@@ -1,11 +1,10 @@
 /* 基本設定 */
 
-
 /* 時間帯ごとの背景パターン */
-.sky-morning { background: linear-gradient(to bottom, #ff9a9e 0px, #ffffff 500px); } /* 朝焼けのピンク */
-.sky-day     { background: linear-gradient(to bottom, #4facfe 0px, #ffffff 500px); } /* 突き抜ける青空 */
-.sky-evening { background: linear-gradient(to bottom, #f093fb 0px, #ffffff 500px); } /* 紫がかった夕暮れ */
-.sky-night   { background: linear-gradient(to bottom, #a18de7 0px, #ffffff 500px); } /* 深夜の深い青 */
+.sky-morning { background: linear-gradient(to bottom, #ff9a9e 0px, rgba(255,255,255,0) 500px); } /* 朝焼けのピンク */
+.sky-day     { background: linear-gradient(to bottom, #4facfe 0px, rgba(255,255,255,0) 500px); } /* 突き抜ける青空 */
+.sky-evening { background: linear-gradient(to bottom, #f093fb 0px, rgba(255,255,255,0) 500px); } /* 紫がかった夕暮れ */
+.sky-night   { background: linear-gradient(to bottom, #a18de7 0px, rgba(255,255,255,0) 500px); } /* 深夜の深い青 */
 
 
 /* 背景を画面全体に広げ、スクロールしても背景のグラデーションがズレないように固定します */
@@ -19,8 +18,13 @@ body {
     font-weight: 400;
     line-height: 1.8;
     color: #333;
-    back-ground:
+    background-color: #fffbf3;
+}
 
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
 }
 
 /* linear-gradient(方向, 開始色 0px, 終了色 500px) 
@@ -54,13 +58,18 @@ html {
     background:RGB(255, 251, 243);
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 
 /* コンテンツ幅の制限と中央寄せ */
 .container {
-    max-width: 1000vh;
-    margin-left: 24px;
-    padding: 0px;
+    max-width: 100rw;   /* もしくは 1200px */
+    margin: 0 auto;      /* 左右中央寄せ */
 }
+
+
 
 /* リンクの基本スタイル（下線を消す） */
 a {
@@ -88,38 +97,24 @@ header h1 {
 }
 
 .scu-logo{
-    width: 10vh;
-    margin-left: 50px;
+    width: 7vw;
+    margin-left: 10px;
 }
 
-.header-center {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.header-center img{
-  width: 80px;
-}
 
 .header-title {
-  font-size: 2rem;
+  display: flex;
+  gap: 16px;
+  font-size: 3vw;
   color: #008b8b;
-  margin: 0;
+  margin: 30 0 0 10;
 }
 
-.header-right {
-  display: flex;
-  flex-direction: column;   /* ← 横 → 縦 */
-  align-items: flex-end;    /* 右寄せ */
-  gap: 12px;                /* メニューとドットの間 */
-}
 
 .menuunder-dot{
   width: 180px;
   height: auto;
 }
-
 
 
 
@@ -189,15 +184,17 @@ header h1 {
 
 .namimoji{
     margin-top:100px;
-    width:530px;
+    width:50vw;
 }
+
+
 
 .img{
     display: block;
 }
 
 .dot{
-    width: 400px;
+    width: 50vw;
 }
 
 .hero-info {
@@ -205,7 +202,7 @@ header h1 {
 }
 
 .InformationData{
-    width: 1200px;
+    width: 50vw;
 }
 
 .date {
@@ -239,28 +236,30 @@ header h1 {
 }
 
 .section-title {
-    font-size: 1.5rem;
-    color: #008ba8;
+    font-size: 2rem;
+    color: #00958f;
     margin-bottom: 20px;
-    margin-left: 50px;
+    margin-left: 100px;
     /* border-bottom: 1px solid #eee;  */
     padding-bottom: 10px;
-    
+    font-weight: bold;
+     letter-spacing: 0.05em;
 }
 
 .section-Englishtitle {
-    margin-left: 50px;
-    font-size: 1.0rem;
-    color: #008ba8;
-    margin-bottom: -30px;
+    margin-left: 100px;
+    font-size: 1.4rem;
+    color: #007090;
+    margin-bottom: -40px;
     padding-top: 20px;
+    font-weight: lighter;
 }
 
 .section-title::before {
   content: "";
   position: absolute;
   left: 20px;
-
+  
   transform: translateY(-50%);
 
   width: 15vh;          /* 花のサイズ */
@@ -269,10 +268,6 @@ header h1 {
   background-size: contain;
   background-repeat: no-repeat;
   
-}
-
-.content-body {
-    font-size: 0.95rem;
 }
 
 /* --- 開催概要リスト --- */
@@ -291,6 +286,11 @@ header h1 {
   margin-top: 40px;
 } */
 
+.main-visual{
+  margin-left:10vw;
+  width:40vw;
+}
+
 /* 上のテキスト */
 .overview-time {
   display: flex;
@@ -300,7 +300,15 @@ header h1 {
 }
 
 .overview-info{
-margin:30px;
+text-align: left;
+}
+
+.overview-wrap{
+  display: flex;
+    justify-content: space-between; /* 左右に配置 */
+    align-items: center; /* 縦位置を揃える */
+    width: 100%;
+    flex-wrap: nowrap;
 }
 
 .free {
@@ -331,10 +339,12 @@ margin:30px;
   margin-bottom: 6px;
 }
 
+
+
 /* 日付の丸 */
 .date-list {
   display: flex;
-  gap: 16px;
+  gap: 3vw;
   margin-top: 40px;
   margin-left: 50px;
   flex-wrap: wrap;
@@ -366,10 +376,25 @@ margin:30px;
   margin-top: 4px;
 }
 
+.Bike{
+  width: 10vw;
+  display: block;
+  align-self: flex-end;
+
+}
+
 .flower-illust{
     display: block;
-  margin-left: auto;
-  width: 50vh;
+  margin-top: 8vh;
+  width: 35vw;
+}
+
+.overview-illust{
+  display: flex;
+    justify-content: space-between; /* 左右に配置 */
+    align-items: center; /* 縦位置を揃える */
+    width: 100%;
+    flex-wrap: nowrap;
 }
 
 
@@ -396,17 +421,32 @@ margin:30px;
 }
 
 .access-map img {
-    max-width: 100%;
+    width:50vw;
     height: auto;
 }
 
-/* --- フッター --- */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.8rem;
-    color: #666;
+.sub-access-place{
+    margin-left:100px;
+    margin-bottom:-40px;
 }
+
+.access-place{
+    font-size: 2rem;
+    font-weight:lighter;
+    margin-left:100px;
+}
+.access-detail{
+    margin-left:100px;
+    margin-top:-30px;
+}
+
+.access-all{
+  display: flex;
+    justify-content: space-between; /* 左右に配置 */
+    align-items: center; /* 縦位置を揃える */
+    flex-wrap: nowrap;
+}
+
 
 
 
@@ -418,21 +458,26 @@ h1 {
     letter-spacing: 0.05em; /* 文字の間隔を少し広げてオシャレに */
 }
 
-h2, .date, .section-title {
+h2, .date{
     font-weight: 700; /* 太字 */
     letter-spacing: 0.05em; /* 文字の間隔を少し広げてオシャレに */
 }
 
+
 .main-title{
-    font-size: 40px;
+    font-size: 4vw;
     margin-left:50px;
-    font-weight:300px;
+    font-weight:bold;
+    color: rgb(0,149,143);
+    font-family: "Zen Maru Gothic", sans-serif;
 }
+
+
 
 /* 素案の「01 ごあいさつ」のような数字部分を強調 */
 .section-title::before {
     /* もしHTMLで数字を分けて書くのが面倒なら、ここでフォントを調整するだけでもOK */
-    font-family: "Montserrat", sans-serif;
+    font-family: "Zen Maru Gothic", sans-serif;
 }
 
 /* style.css */
@@ -471,11 +516,11 @@ h2, .date, .section-title {
 .hero-inner {
     position: relative;
     overflow: visible;
-
+    min-height: auto;
     display: flex;
     justify-content: space-between; /* 左右に振り分ける */
     align-items: center;            /* 上下の中心を揃える */
-    min-height: 600px; /* ← これを追加 */
+    
     padding: 0;
     margin: 0;
     
@@ -504,12 +549,10 @@ h2, .date, .section-title {
   top: 0;               /* 画面（または親）の上 */
   right: 0;  
     margin-right:-100px;
-
-   
 }
 
 .boygirl-illust{
-    width: 40%;
+    width: 10vw;
     height: auto;
    
 }
@@ -524,15 +567,9 @@ h2, .date, .section-title {
     width: 100vw; 
     display: block;
     position: relative;
-    margin: 0;
+    margin-top: 10vh;
+    margin-bottom: 0;
 }
-
-section
-/* body {
-    /* サイト全体のフォントを変える場合 */
-    /* font-family: "Palette+Mosaic 1c", sans-serif; 
-}
- */ 
 
 
 h1 {
@@ -540,6 +577,64 @@ h1 {
     font-family: "Impact", sans-serif;
 }
 
+
+.row-title {
+    display: flex;
+    justify-content: space-between; /* 左右に配置 */
+    align-items: center; /* 縦位置を揃える */
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.sort-buttons {
+    display: flex;
+    gap: 16px; /* ボタン間の余白 */
+    flex-shrink: 0;
+}
+
+.sort-buttons a {
+    cursor: pointer;
+}
+
+.sort-buttonsLab {
+  background-color: #fff;
+  border: solid 2px #008ba8;
+  color: #008ba8;
+  border-radius: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1em;
+  box-shadow: 0 5px 0 #008ba8;
+  display: inline-block;
+  transition: .3s;
+}
+.sort-buttonsLab:hover {
+  background-color: #0a758a;
+  border: solid 2px #008ba8;
+  color:#fff;
+  transform: translateY(5px);
+  box-shadow: 0 0 0 #005161;
+}
+
+.sort-buttonsType {
+  background-color: #fff;
+  border: solid 2px #008ba8;
+  color: #008ba8;
+  border-radius: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1em;
+  box-shadow: 0 5px 0 #008ba8;
+  display: inline-block;
+  transition: .3s;
+}
+.sort-buttonsType:hover {
+  background-color: #0a758a;
+  border: solid 2px #008ba8;
+  color:#fff;
+  transform: translateY(5px);
+  box-shadow: 0 0 0 #005161;
+}
 
 
 
@@ -549,8 +644,7 @@ h1 {
   display: grid;
   
   grid-template-columns: repeat(3, 1fr); 
-  gap: 24px;
-  padding: 20px 0;
+  gap:5vw;
 }
 
 
@@ -738,16 +832,27 @@ h1 {
   cursor: pointer;
 }
 
+/* --- フッター --- */
 footer {
-  margin: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #00958f;
+     margin: 0;
   padding: 0;
-  width: 100%;
+  text-align: center;
 }
 
-footer img{
-    display: block;
-    width: 950px;
-    height: auto;
+.wood{
+    width: 100vw;
+    text-align: center;
+}
+
+.SNS-icon{
+  width:2vw;
+  display: flex;
+    justify-content: space-between; /* 左右に配置 */
+    align-items: center; /* 縦位置を揃える */
+    flex-wrap: nowrap;
 }
 
 /* アニメーション */
@@ -797,3 +902,31 @@ footer img{
 /* ease-inでスムーズな色遷移 */
 
 
+
+
+
+.type-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; /* カードとの距離 */ 
+  float: left; /* 左側に固定 */
+}
+
+.type-label::before {
+  content: "";
+  width: 2px;
+   /* 好きな長さに調整できる */
+  background: #008ba8;
+}
+
+.type-label span {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  border-right: 2px
+  solid #008ba8;
+  padding-right: 8px;
+  font-weight: bold;
+  color: #008ba8;
+  letter-spacing: 0.2em;
+}
