@@ -7,8 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -61,16 +60,17 @@
                 <p class="venue">札幌市立大学芸術の森キャンパス</p>
             </div> -->
         </div>
-
-        <div class="hero-image-container">
-            <img src="images/main.gif"  class="main-illust" alt="">
-        </div>
+        <img src="images/main.gif"  class="main-illust" alt="">
+        <!-- <div class="hero-image-container">
+            
+        </div> -->
     </div>
 </section>
 
         <section id="greeting" class="section">
+            <img src="images/theme.png"  class="theme" alt="">
             <div class="container">
-                <img src="images/theme.png"  class="theme" alt="">
+                
                 <!-- <h2 class="section-title">01 ごあいさつ</h2>
                 <div class="content-body">
                     <p>（ここに本文が入ります。画像からテキストを抽出して入れてください。）</p>
@@ -82,30 +82,46 @@
 
         <section id="overview" class="section">
             <div class="container">
-                <!-- <img src="images/oneflower.png"  class="oneflower-illust" alt=""> -->
+                
                 <h3 class="section-Englishtitle">Event Overview</h3>
                 <h2 class="section-title">開催概要</h2>
 
                 <div class="overview-wrap">
 
   <!-- 上：概要テキスト -->
-  <div class="overview-info">
-    <div class="overview-time">
-      <span class="free">入場無料</span>
-      <span class="time">10:00–17:00</span>
+
+         <img src="images/main-visual.png"  class="main-visual" alt="">
+
+
+    <div class="overview-info">
+
+        <!-- <div class="overview-time">
+          <span class="free">入場無料</span>
+          <span class="time">10:00–17:00</span>
+        </div> -->
+
+        <p class="place">
+          札幌市立大学デザイン学部・デザイン研究科
+          <br>卒業修了研究展2026
+        </p>
+        <p class="place">
+         会場：札幌市立大学芸術の森キャンパス<br>
+         （札幌市南区芸術の森1丁目）
+        </p>
+        <p class="place">
+           日時：2月15日〜2月22日
+        </p>
+        <ul class="schedule-note">
+         <li class="weekday">[平日]　10:00〜17:00</li>
+         <li class="holiday">[土日祝]　10:00〜16:00</li>
+        </ul>
+     
     </div>
 
-    <p class="place">
-      会場：札幌市立大学芸術の森キャンパス<br>
-      （札幌市南区芸術の森1丁目）
-    </p>
-
-    <ul class="schedule-note">
-      <li class="weekday">平日　10:00〜17:00</li>
-      <li class="holiday">土日祝　10:00〜16:00</li>
-    </ul>
-  </div>
-
+            </div> <!-- overview-wrap のdiv -->
+        </div>
+    <p class="place">開催予定日</p>
+    
   <!-- 中：日付 -->
   <div class="date-list">
     <div class="date active">15(日)</div>
@@ -114,11 +130,18 @@
     <div class="date">18(水)</div>
     <div class="date">19(木)</div>
     <div class="date">20(金)</div>
-    <div class="date special">21(土)<br><span>ARTOU開催日</span></div>
+    <div class="date special">21(土)<br><span>ARTOU<br>開催日</span></div>
     <div class="date special">22(日)</div>
   </div>
- <img src="images/flower.png"  class="flower-illust" alt="">
-</div>
+
+  <div class="overview-illust">
+
+            <img src="images/RedBike.png"  class="Bike" alt="">
+            <img src="images/BlueBike.png"  class="Bike" alt="">
+
+            <img src="images/flower.png"  class="flower-illust" alt="">
+    </div>
+
 
 
                 <!-- <div class="content-body">
@@ -163,14 +186,18 @@
         </section>
 
         <section id="access" class="section">
-            <div class="container">
+            
                 <h3 class="section-Englishtitle">Access</h3>
                 <h2 class="section-title">会場へのアクセス</h2>
-                <div class="content-body access-body">
+                
+                <div class="access-all">
                     <div class="access-info">
-                        <p>会場：</p><h4>札幌市立大学芸術の森キャンパス</h4><br><p>北海道札幌市南区芸術の森1丁目</p>
+                        <p class="sub-access-place">会場：</p> 
+                        <p class="access-place">札幌市立大学芸術の森キャンパス</p>
+      <p class="access-detail">北海道札幌市南区芸術の森1丁目</p>
+    
                         <br>
-                        <p>地下鉄南北線「さっぽろ駅」<br>
+                        <p class="access-detail">地下鉄南北線「さっぽろ駅」<br>
                             |（地下鉄南北線 約 17 分）<br>
                             地下鉄南北線「真駒内駅」<br>
                             →真駒内駅前 2 番バスのりば<br>
@@ -179,19 +206,26 @@
                             徒歩約 3 分</p>
                     </div>
                     <div class="access-map">
-                        <img src="https://placehold.jp/300x300.png?text=Map+Image" alt="地図">
+                        <img src="images/map.png" alt="地図">
                     </div>
                 </div>
-            </div>
+           
         </section>
     </main>
 
     <footer>
-        <div class="container">
+        <div class="footer">
+
+             <div class="SNS-icon">
+                <li><a href="https://www.instagram.com/scu_sotsuten_2026?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="images/Instagram.png" alt="アイコン"></a></li>
+            
+            <img src="images/x.png" alt="アイコン">
+            </div>
+
             <p>公式InstagramとXにて情報発信中</p>
             <br>
             <p>&copy; 2026 Sapporo City University</p>
-             <img src="images/footer.png" alt="">
+             <img src="images/footer.png" class="wood" alt="">
         </div>
     </footer>
       <!-- ここまでがHTML -->
